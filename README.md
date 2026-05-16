@@ -107,13 +107,3 @@ QUERY = "ATGCGTACGATCG..."
 ```
 
 To adjust the model (e.g. allow intron→exon transitions for multi-exon genes), update the `TRANSITION` and `EMISSION` matrices directly.
-
----
-
-## Background
-
-This implementation follows the classic HMM decoding approach described in:
-
-> Durbin, R., Eddy, S., Krogh, A., & Mitchison, G. (1998). *Biological Sequence Analysis*. Cambridge University Press.
-
-The splice-donor emission probabilities reflect the strong preference for a `G` at the first intronic position (the canonical GU dinucleotide in pre-mRNA, represented here as `G` in the DNA strand).
